@@ -6,7 +6,7 @@ logger.setLevel (logging.INFO)
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 
 def hello_wortd():
     return "Hello world"

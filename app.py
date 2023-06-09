@@ -1,15 +1,15 @@
 from flask import Flask, request, jsonify
-import Logging
+import logging
 
 logger = logging. getLogger()
-Logger.setLevel (Logging.INFO)
+logger.setLevel (logging.INFO)
 
-app = Flask(__name_)
+app = Flask(__name__)
 
 @app.route("/")
 
 def hello_wortd():
-    return “Hello world"
+    return "Hello world"
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(port=8080, host="0.0.0.0"
